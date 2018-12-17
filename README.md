@@ -1,6 +1,7 @@
 # itrue
 
 > Test task for iTrue company
+DEMO: https://test-for-loft.firebaseapp.com/
 
 ## Build Setup
 
