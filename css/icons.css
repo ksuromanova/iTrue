@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'itrue';
+  src:  url('../fonts/itrue.eot?torfxv');
+  src:  url('../fonts/itrue.eot?torfxv#iefix') format('embedded-opentype'),
+    url('../fonts/itrue.ttf?torfxv') format('truetype'),
+    url('../fonts/itrue.woff?torfxv') format('woff'),
+    url('../fonts/itrue.svg?torfxv#itrue') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'itrue' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e900";
+}
+.icon-play:before {
+  content: "\e901";
+}
+.icon-top:before {
+  content: "\e902";
+}
+.icon-cancel:before {
+  content: "\ea0f";
+}

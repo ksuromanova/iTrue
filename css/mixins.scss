@@ -1,0 +1,57 @@
+$color-blue: #002263;
+$light-sky-blue: #d8e4e9;
+$color-gray: #212121;
+$color-white: #fff;
+$color-black: #000;
+$color-blue-light: #03a9f4;
+$color-green: #7cca00;
+$color-orange: #fdb52b;
+$color-blue-gray: #678ba7;
+
+$color-bg: (
+  color: $color-blue,
+  bw: $color-gray
+);
+
+$color-bg-btn: (
+  color: $color-orange,
+  bw: $color-gray
+);
+
+$color-text-btn: (
+  color: $color-blue,
+  bw: $color-white
+);
+$color-b-b: (
+  color: $color-blue,
+  bw: $color-black
+);
+
+$color-g-bl: (
+  color: $color-green,
+  bw: $color-blue-light
+);
+
+$color-bl-b: (
+  color: $color-blue-light,
+  bw: $color-black
+);
+
+$color-g-b: (
+  color: $color-green,
+  bw: $color-black
+);
+
+$bw: (
+  color: grayscale(0%),
+  bw: grayscale(100%)
+);
+
+// @include theme-color(color, $text);
+@mixin theme-color($param, $value) {
+  @each $theme, $color in $value {
+     article.theme-#{$theme} & {
+      #{$param}: #{$color} !important;
+    }
+  }
+}
